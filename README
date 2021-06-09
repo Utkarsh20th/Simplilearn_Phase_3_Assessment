@@ -30,7 +30,7 @@
    - The Collection will be imported in the POSTMAN application. Expand the Collection to see GET and POST requests
      Note: GET operation is done to fetch list of users from Reqres.in API
            POST operation is done to add a user into Reqres.in API
-   - Necessary Environment variables are located at location .\Simplilearn_Phase_3_Assessment\POSTMAN\1_Script\Environment\Simplilearn_Phase_3_Assessment_Environment.postman_environment.json
+   - Alo import the necessary Environment variables. They are located at location .\Simplilearn_Phase_3_Assessment\POSTMAN\1_Script\Environment\Simplilearn_Phase_3_Assessment_Environment.postman_environment.json
    GET
    * Click on "GET_(List_of_users)" and then click on "Send". The API response and the result of reponse validation will be seen in  "Response-Body" tab and "Test Results" tab respectively
    * Result is also stored at location .\Simplilearn_Phase_3_Assessment\POSTMAN\2_Result\GET_Response.json
