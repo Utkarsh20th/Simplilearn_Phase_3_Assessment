@@ -1,0 +1,101 @@
+[RemoteTestNG] detected TestNG version 7.4.0
+0 [main] INFO Project.Simplilearn_Phase_3_Assessment.GET_list_of_users  - *************** Inside Before Class *******************
+1 [main] INFO Project.Simplilearn_Phase_3_Assessment.GET_list_of_users  - *************** Giving base URL *******************
+1174 [main] INFO Project.Simplilearn_Phase_3_Assessment.GET_list_of_users  - *************** Giving data in the request body *******************
+2509 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {s}->https://reqres.in:443
+3024 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to reqres.in:443
+3897 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+3900 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+3901 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+3902 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+3903 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+3903 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Sending request: POST /api/users HTTP/1.1
+3904 [main] DEBUG org.apache.http.wire  -  >> "POST /api/users HTTP/1.1[\r][\n]"
+3905 [main] DEBUG org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
+3905 [main] DEBUG org.apache.http.wire  -  >> "Content-Type: text/plain; charset=ISO-8859-1[\r][\n]"
+3906 [main] DEBUG org.apache.http.wire  -  >> "Content-Length: 59[\r][\n]"
+3906 [main] DEBUG org.apache.http.wire  -  >> "Host: reqres.in[\r][\n]"
+3906 [main] DEBUG org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+3906 [main] DEBUG org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/15.0.2)[\r][\n]"
+3906 [main] DEBUG org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+3906 [main] DEBUG org.apache.http.wire  -  >> "[\r][\n]"
+3907 [main] DEBUG org.apache.http.headers  - >> POST /api/users HTTP/1.1
+3907 [main] DEBUG org.apache.http.headers  - >> Accept: */*
+3907 [main] DEBUG org.apache.http.headers  - >> Content-Type: text/plain; charset=ISO-8859-1
+3907 [main] DEBUG org.apache.http.headers  - >> Content-Length: 59
+3907 [main] DEBUG org.apache.http.headers  - >> Host: reqres.in
+3907 [main] DEBUG org.apache.http.headers  - >> Connection: Keep-Alive
+3907 [main] DEBUG org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.3 (Java/15.0.2)
+3907 [main] DEBUG org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+3908 [main] DEBUG org.apache.http.wire  -  >> "{"name": "Simplilearn_Phase_3_Assessment","job": "Student"}"
+4282 [main] DEBUG org.apache.http.wire  -  << "HTTP/1.1 201 Created[\r][\n]"
+4289 [main] DEBUG org.apache.http.wire  -  << "Date: Wed, 09 Jun 2021 09:25:31 GMT[\r][\n]"
+4290 [main] DEBUG org.apache.http.wire  -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+4290 [main] DEBUG org.apache.http.wire  -  << "Content-Length: 51[\r][\n]"
+4290 [main] DEBUG org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
+4291 [main] DEBUG org.apache.http.wire  -  << "X-Powered-By: Express[\r][\n]"
+4291 [main] DEBUG org.apache.http.wire  -  << "Access-Control-Allow-Origin: *[\r][\n]"
+4292 [main] DEBUG org.apache.http.wire  -  << "Etag: W/"33-dW+WogXvRtk5coKKTj0Gv0YBeJA"[\r][\n]"
+4292 [main] DEBUG org.apache.http.wire  -  << "Via: 1.1 vegur[\r][\n]"
+4292 [main] DEBUG org.apache.http.wire  -  << "CF-Cache-Status: DYNAMIC[\r][\n]"
+4293 [main] DEBUG org.apache.http.wire  -  << "cf-request-id: 0a91b06d4000000dd065097000000001[\r][\n]"
+4293 [main] DEBUG org.apache.http.wire  -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+4293 [main] DEBUG org.apache.http.wire  -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=IBr3BcvtpJjBu62cQvLe3VA9BXvUpVPogyvb9W7%2Bw6eFEF2XmY7qQisAKg0aWl469mw%2B5J769CRwhjQEryIj%2B7AT0xORhAd7yIOh3A9tXzIqlFWS3G%2Bd"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+4294 [main] DEBUG org.apache.http.wire  -  << "NEL: {"report_to":"cf-nel","max_age":604800}[\r][\n]"
+4294 [main] DEBUG org.apache.http.wire  -  << "Server: cloudflare[\r][\n]"
+4295 [main] DEBUG org.apache.http.wire  -  << "CF-RAY: 65c950286e240dd0-BOM[\r][\n]"
+4295 [main] DEBUG org.apache.http.wire  -  << "alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400[\r][\n]"
+4295 [main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+4298 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 201 Created
+4299 [main] DEBUG org.apache.http.headers  - << HTTP/1.1 201 Created
+4299 [main] DEBUG org.apache.http.headers  - << Date: Wed, 09 Jun 2021 09:25:31 GMT
+4299 [main] DEBUG org.apache.http.headers  - << Content-Type: application/json; charset=utf-8
+4300 [main] DEBUG org.apache.http.headers  - << Content-Length: 51
+4300 [main] DEBUG org.apache.http.headers  - << Connection: keep-alive
+4300 [main] DEBUG org.apache.http.headers  - << X-Powered-By: Express
+4300 [main] DEBUG org.apache.http.headers  - << Access-Control-Allow-Origin: *
+4300 [main] DEBUG org.apache.http.headers  - << Etag: W/"33-dW+WogXvRtk5coKKTj0Gv0YBeJA"
+4301 [main] DEBUG org.apache.http.headers  - << Via: 1.1 vegur
+4301 [main] DEBUG org.apache.http.headers  - << CF-Cache-Status: DYNAMIC
+4301 [main] DEBUG org.apache.http.headers  - << cf-request-id: 0a91b06d4000000dd065097000000001
+4301 [main] DEBUG org.apache.http.headers  - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+4301 [main] DEBUG org.apache.http.headers  - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=IBr3BcvtpJjBu62cQvLe3VA9BXvUpVPogyvb9W7%2Bw6eFEF2XmY7qQisAKg0aWl469mw%2B5J769CRwhjQEryIj%2B7AT0xORhAd7yIOh3A9tXzIqlFWS3G%2Bd"}],"group":"cf-nel","max_age":604800}
+4302 [main] DEBUG org.apache.http.headers  - << NEL: {"report_to":"cf-nel","max_age":604800}
+4302 [main] DEBUG org.apache.http.headers  - << Server: cloudflare
+4302 [main] DEBUG org.apache.http.headers  - << CF-RAY: 65c950286e240dd0-BOM
+4302 [main] DEBUG org.apache.http.headers  - << alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+4314 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive indefinitely
+4363 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/json; charset=utf-8
+4363 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+Key: Date ---- Value: Wed, 09 Jun 2021 09:25:31 GMT
+Key: Content-Type ---- Value: application/json; charset=utf-8
+Key: Content-Length ---- Value: 51
+Key: Connection ---- Value: keep-alive
+Key: X-Powered-By ---- Value: Express
+Key: Access-Control-Allow-Origin ---- Value: *
+Key: Etag ---- Value: W/"33-dW+WogXvRtk5coKKTj0Gv0YBeJA"
+Key: Via ---- Value: 1.1 vegur
+Key: CF-Cache-Status ---- Value: DYNAMIC
+Key: cf-request-id ---- Value: 0a91b06d4000000dd065097000000001
+Key: Expect-CT ---- Value: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Key: Report-To ---- Value: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=IBr3BcvtpJjBu62cQvLe3VA9BXvUpVPogyvb9W7%2Bw6eFEF2XmY7qQisAKg0aWl469mw%2B5J769CRwhjQEryIj%2B7AT0xORhAd7yIOh3A9tXzIqlFWS3G%2Bd"}],"group":"cf-nel","max_age":604800}
+Key: NEL ---- Value: {"report_to":"cf-nel","max_age":604800}
+Key: Server ---- Value: cloudflare
+Key: CF-RAY ---- Value: 65c950286e240dd0-BOM
+Key: alt-svc ---- Value: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+4426 [main] INFO Project.Simplilearn_Phase_3_Assessment.GET_list_of_users  - *************** Extracting and asserting the HTTP Status Code received from the server *******************
+"Status Code" is => 201
+PASSED: ValidationMethod
+PASSED: AddAUser
+
+===============================================
+    Default test
+    Tests run: 2, Failures: 0, Skips: 0
+===============================================
+
+
+===============================================
+Default suite
+Total tests run: 2, Passes: 2, Failures: 0, Skips: 0
+===============================================
+
