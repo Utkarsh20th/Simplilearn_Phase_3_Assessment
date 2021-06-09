@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "f4b69812-dced-43a5-998c-ab742920c4ad",
+		"name": "Simplilearn_Phase_3_Assessment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET_(List_of_users)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body matches name: Lindsay\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Lindsay\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{SP3A_baseURL}}/{{SP3A_targetURI}}?page=2",
+					"host": [
+						"{{SP3A_baseURL}}"
+					],
+					"path": [
+						"{{SP3A_targetURI}}"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST_(Add_a_user)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body matches name: Simplilearn_Automation_Testing_Masters_Program\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Simplilearn_Automation_Testing_Masters_Program\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Simplilearn_Automation_Testing_Masters_Program\",\r\n    \"job\": \"Student\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{SP3A_baseURL}}/{{SP3A_targetURI}}",
+					"host": [
+						"{{SP3A_baseURL}}"
+					],
+					"path": [
+						"{{SP3A_targetURI}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
